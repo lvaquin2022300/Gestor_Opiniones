@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "65e23391554923802cd8bfcf"
+  },
+  "usuario": "el_manolo",
+  "publicacion": "65e2335b554923802cd8bfc2",
+  "texto": "que buena publicacion",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e23440554923802cd8bfd6"
+  },
+  "usuario": "el_manolo",
+  "publicacion": "65e2335b554923802cd8bfc2",
+  "texto": "menti, no es tan buena la publicacion",
+  "estado": true,
+  "__v": 0
+}]
