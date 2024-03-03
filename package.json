@@ -1,12 +1,12 @@
 {
   "name": "gestor_empresas",
   "version": "1.0.0",
-  "description": "programa de empresa COPREX",
+  "description": "Gestor_opiniones",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lucianomaquin",
+  "author": "lvaquin",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
