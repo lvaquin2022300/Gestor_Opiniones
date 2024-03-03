@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const CommentSchema = mongoose.Schema ({
+const CommentSchema = mongoose.Schema({
     usuario: {
         type: String,
         required: [true, 'usuario obligatorio']
@@ -13,14 +13,14 @@ const CommentSchema = mongoose.Schema ({
         type: String,
         required: [true, 'texto obligatorio']
     },
-    estado:{
+    estado: {
         type: Boolean,
         default: true
     }
 });
 
-CommentSchema.methods.toJSON = function(){
-    const { __v, _id, ...enterprise} = this.toObject();
+CommentSchema.methods.toJSON = function () {
+    const { __v, _id, ...enterprise } = this.toObject();
     enterprise.cid = _id;
     return enterprise;
 }
