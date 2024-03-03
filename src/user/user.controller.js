@@ -16,6 +16,7 @@ export const usuariosPost = async (req, res) => {
     });
 }
 
+//Excepciones-validaciones de login
 export const usuariosLogin = async (req, res) => {
     const { user, password } = req.body;
 
@@ -59,7 +60,7 @@ export const usuariosLogin = async (req, res) => {
     } catch (e) {
         console.log(e);
         res.status(500).json({
-            msg: 'Error inesperado'
+            msg: 'Error'
         })
     }
 }
@@ -69,9 +70,9 @@ export const usuariosPut = async (req, res) => {
     const { _id, password, correo, ...resto } = req.body;
     const { contraseña } = req.body;
 
-    if(!contraseña){
+    if (!contraseña) {
         return res.status(400).json({
-            msg: 'Poner contraseña'
+            msg: 'Agrega la contraseña'
         });
     }
 
@@ -90,7 +91,7 @@ export const usuariosPut = async (req, res) => {
     const usua = usuarioso.usuario;
 
     res.status(200).json({
-        msg: 'Tu usuario ha sido actualizado',
+        msg: 'Se actualizo correctamente',
         nombre_nuevo: nombre,
         usuario_nuevo: usua
     });
