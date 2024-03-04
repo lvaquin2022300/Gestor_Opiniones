@@ -19,11 +19,11 @@ const registrarse = async (req, res) => {
 
 
 const login = async (req, res) => {
-    
+
     const { email, password } = req.body;
-    
+
     try {
-        
+
         const usuario = await User.findOne({ email });
 
 
@@ -32,7 +32,7 @@ const login = async (req, res) => {
                 msg: 'El correo no está registrado'
             });
         }
-        
+
 
         if (!usuario.estado) {
             return res.status(400).json({
@@ -46,7 +46,7 @@ const login = async (req, res) => {
                 msg: 'La contraseña no coincide'
             });
         }
-        
+
 
         const token = await generarJWT(usuario.id);
 
