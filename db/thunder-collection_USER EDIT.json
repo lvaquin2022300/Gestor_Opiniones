@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "USER EDIT",
+    "dateExported": "2024-03-01T17:57:45.008Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5d7b0e6a-15a5-47f8-979c-67649e8e373a",
+            "colId": "0d31f6a8-424c-4173-a077-8c01991e9a07",
+            "containerId": "",
+            "name": "EditarUsuario (token usuario)",
+            "url": "http://localhost:3000/api/users/65dbb7525f922d5e61513634",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-01T14:24:02.870Z",
+            "modified": "2024-03-01T14:24:02.870Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiYjc1MjVmOTIyZDVlNjE1MTM2MzQiLCJpYXQiOjE3MDg5MTM5MDIsImV4cCI6MTcwODkxNzUwMn0.nwcOeeAKw8P4mfDhiLzmvu_CXbSupvtHAEW9JSvqG9c"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameUser\": \"Omar\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

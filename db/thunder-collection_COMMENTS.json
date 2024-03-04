@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "COMMENTS",
+    "dateExported": "2024-03-01T17:58:01.944Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "62a42df3-6812-48c7-ba0a-25e94d8d7784",
+            "colId": "31d52391-0764-4c8b-843c-e08ec3966268",
+            "containerId": "",
+            "name": "AgregarComentario",
+            "url": "http://localhost:3000/api/post/users/65e20c14da6d87fd236a2fee",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T16:44:58.909Z",
+            "modified": "2024-03-01T17:28:43.190Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMGMxNGRhNmQ4N2ZkMjM2YTJmZWUiLCJpYXQiOjE3MDkzMTMwNDksImV4cCI6MTcwOTMxNjY0OX0.MFhadVXK6h292Neo-sjl9HbjgUWEr8spXIfnQ-Cj0NY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"postId\": \"65e1e6daaa475ff8b552cdff\",\n    \"titulo\":\"mentiroso\",\n    \"descripcion\":\"Eso es fake\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
