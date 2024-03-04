@@ -12,12 +12,12 @@ const validarJWT = async (req, res, next) => {
         const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
         const usuario = await User.findById(uid);
         if (!usuario) {
-            return res.status(400).json({
+            return res.status(401).json({
                 msg: 'Usuario no existe'
             });
-        } 
+        }
         if (!usuario.estado) {
-            return res.status(400).json({
+            return res.status(401).json({
                 msg: 'Usuario desactivado'
             });
         }
