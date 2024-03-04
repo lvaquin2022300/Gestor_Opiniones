@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Héctor Javier Rodríguez Cabrera",
+  "author": "lvaquin",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
