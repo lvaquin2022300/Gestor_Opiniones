@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "65e2335b554923802cd8bfc2"
+  },
+  "usuario": "el_manolo",
+  "titulo": "mi primera publicacion",
+  "categoria": "just talking",
+  "texto": "hola, esta es mi primera publicacion",
+  "comentarios": [],
+  "estado": true,
+  "__v": 0
+}]

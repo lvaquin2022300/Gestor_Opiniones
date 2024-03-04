@@ -1,0 +1,234 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "funciones usuario",
+    "dateExported": "2024-03-01T20:19:46.551Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2b2867f6-8d0b-481d-965f-1fd8179e7f87",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "registrar usuario",
+            "url": "http://localhost:3000/forchan_2/v1/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T19:57:41.815Z",
+            "modified": "2024-03-01T19:57:41.815Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"manolo\",\n  \"username\":\"el_manolo\",\n  \"correo\":\"manolo@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d43b387e-e06d-47b0-8a12-9fc34eb5f956",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/forchan_2/v1/usuarios/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T19:57:41.816Z",
+            "modified": "2024-03-01T19:57:41.816Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":\"manolo@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "915bcda7-2910-448f-9ae4-11eea973e2df",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "editar usuario",
+            "url": "http://localhost:3000/forchan_2/v1/usuarios/65e20ae8813390df4fe99048",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T19:57:41.817Z",
+            "modified": "2024-03-01T19:57:41.817Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMGFlODgxMzM5MGRmNGZlOTkwNDgiLCJpYXQiOjE3MDkzMTI4NjksImV4cCI6MTcwOTMxNjQ2OX0.kHhxm5ZbRajrpDwKafEHL640KBqeEzouvrjLP58z2_8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"manolos\",\n  \"usuario\":\"los_manolosos\",\n  \"correo\":\"manolo@email.com\",\n  \"contraseña\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4cbf3158-0e87-480d-b8dd-04a4b0fdfefb",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "crear publicaciones",
+            "url": "http://localhost:3000/forchan_2/v1/publications",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T19:57:41.818Z",
+            "modified": "2024-03-01T19:58:19.023Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMzM0ZDU1NDkyMzgwMmNkOGJmYmMiLCJpYXQiOjE3MDkzMjMwODksImV4cCI6MTcwOTMyNjY4OX0.iO0SCxmbSHGOJ4oqqCU6CPgUeLRJThWAnCrFmgDkJoE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"mi primera publicacion\",\n  \"categoria\":\"just talking\",\n  \"texto\":\"hola, esta es mi primera publicacion\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "605c10a1-0a58-4f23-a92c-6929946bee13",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "editar publicacion",
+            "url": "http://localhost:3000/forchan_2/v1/publications/65e20d902ec4a2d3cfd9f61b",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T19:57:41.819Z",
+            "modified": "2024-03-01T19:57:41.819Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMGFlODgxMzM5MGRmNGZlOTkwNDgiLCJpYXQiOjE3MDkzMTI4NjksImV4cCI6MTcwOTMxNjQ2OX0.kHhxm5ZbRajrpDwKafEHL640KBqeEzouvrjLP58z2_8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\":\"probando el editar publicaciones\",\n  \"correo\":\"manolo@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4e6b3b2-28b9-415a-9507-a69d9e6460b6",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "eliminar publicaciones",
+            "url": "http://localhost:3000/forchan_2/v1/publications/65e20f062ec4a2d3cfd9f621",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T19:57:41.820Z",
+            "modified": "2024-03-01T19:57:41.820Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMGFlODgxMzM5MGRmNGZlOTkwNDgiLCJpYXQiOjE3MDkzMTI4NjksImV4cCI6MTcwOTMxNjQ2OX0.kHhxm5ZbRajrpDwKafEHL640KBqeEzouvrjLP58z2_8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"manolo@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "28c9fd2c-95eb-4f82-862d-a985b7f1cb00",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "crear comentarios",
+            "url": "http://localhost:3000/forchan_2/v1/comments",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T19:57:41.821Z",
+            "modified": "2024-03-01T20:02:08.969Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMzM0ZDU1NDkyMzgwMmNkOGJmYmMiLCJpYXQiOjE3MDkzMjMwODksImV4cCI6MTcwOTMyNjY4OX0.iO0SCxmbSHGOJ4oqqCU6CPgUeLRJThWAnCrFmgDkJoE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"publicacion\":\"65e215231c6646b7d5c5e234\",\n  \"texto\":\"hol\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "83e68d3d-6d6b-4d22-8a76-4264125a93fa",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "editar comentario",
+            "url": "http://localhost:3000/forchan_2/v1/comments/65e23440554923802cd8bfd6",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-01T19:57:41.822Z",
+            "modified": "2024-03-01T20:03:39.798Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMzM0ZDU1NDkyMzgwMmNkOGJmYmMiLCJpYXQiOjE3MDkzMjMwODksImV4cCI6MTcwOTMyNjY4OX0.iO0SCxmbSHGOJ4oqqCU6CPgUeLRJThWAnCrFmgDkJoE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\":\"menti, no es tan buena la publicacion\",\n  \"correo\":\"manolo@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9415fff-1f0f-4a00-a792-54e1a3138591",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "eliminar comentario",
+            "url": "http://localhost:3000/forchan_2/v1/comments/65e2111076b4b336a773c595",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-01T19:57:41.823Z",
+            "modified": "2024-03-01T19:57:41.823Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMGFlODgxMzM5MGRmNGZlOTkwNDgiLCJpYXQiOjE3MDkzMTI4NjksImV4cCI6MTcwOTMxNjQ2OX0.kHhxm5ZbRajrpDwKafEHL640KBqeEzouvrjLP58z2_8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"manolo@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "503b9d04-9ccf-4c72-9127-4115a9303a2a",
+            "colId": "38396f07-96a0-4643-852b-5de2d7abdedd",
+            "containerId": "",
+            "name": "ver publicaciones",
+            "url": "http://localhost:3000/forchan_2/v1/publications",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-01T19:57:41.824Z",
+            "modified": "2024-03-01T19:58:43.990Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyMzM0ZDU1NDkyMzgwMmNkOGJmYmMiLCJpYXQiOjE3MDkzMjMwODksImV4cCI6MTcwOTMyNjY4OX0.iO0SCxmbSHGOJ4oqqCU6CPgUeLRJThWAnCrFmgDkJoE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
