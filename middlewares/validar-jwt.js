@@ -15,7 +15,7 @@ const validarJWT = async (req, res, next) => {
             return res.status(400).json({
                 msg: 'Usuario no existe'
             });
-        }
+        } 
         if (!usuario.estado) {
             return res.status(400).json({
                 msg: 'Usuario desactivado'
