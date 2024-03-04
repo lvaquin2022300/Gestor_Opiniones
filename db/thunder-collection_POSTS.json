@@ -24,7 +24,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"titulo\": \"sexo\",\n  \"categoria\": \"+18\",\n  \"descripcion\": \"no se no tengo\"\n}",
+                "raw": "{\n  \"titulo\": \"siu\",\n  \"categoria\": \"accion\",\n  \"descripcion\": \"Todo o nada\"\n}",
                 "form": []
             },
             "tests": []
@@ -48,7 +48,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"titulo\": \"valorant\",\n  \"categoria\": \"amor\",\n  \"descripcion\": \"llegue a inmortal xd\"\n}",
+                "raw": "{\n  \"titulo\": \"poter\",\n  \"categoria\": \"ficcion\",\n  \"descripcion\": \"Pelis ciencia y ficcion\"\n}",
                 "form": []
             },
             "tests": []

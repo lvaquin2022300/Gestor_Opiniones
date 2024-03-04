@@ -24,7 +24,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"postId\": \"65e1e6daaa475ff8b552cdff\",\n    \"titulo\":\"mentiroso\",\n    \"descripcion\":\"Eso es fake\"\n}\n",
+                "raw": "{\n    \"postId\": \"65e1e6daaa475ff8b552cdff\",\n    \"titulo\":\"aventurero\",\n    \"descripcion\":\"Tremendo titulo\"\n}\n",
                 "form": []
             },
             "tests": []

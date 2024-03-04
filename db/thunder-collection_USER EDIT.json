@@ -24,7 +24,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nameUser\": \"Omar\"\n\n}",
+                "raw": "{\n  \"nameUser\": \"Rodrigo\"\n\n}",
                 "form": []
             },
             "tests": []
